@@ -1,10 +1,12 @@
-import './header.css'
-
+import { Container } from './style'
+import { FaPaw } from "react-icons/fa6"
+ 
 const Header = () => {
     return (
-        <header>
+        <Container>
             <h1>Pets</h1>
-        </header>
+            <FaPaw size={55} color='#F5A405'/>
+        </Container>
     )
 }
 

@@ -1,8 +1,13 @@
-import './input.css'
+import { InputContainer, IconContainer } from './style'
 
-const Input = (props) => {
+const Input = ({ icon, ...props }) => {
     return (
-        <input {...props}/>
+        <InputContainer>
+            <IconContainer>
+                {icon}
+            </IconContainer>
+            <input {...props}/>
+        </InputContainer>
     )
 }
 

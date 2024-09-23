@@ -1,4 +1,6 @@
-button {
+import styled from 'styled-components';
+
+export const ButtonContainer = styled.button `
     background-color: #F5A405;
     border: none;
     width: 200px;
@@ -8,9 +10,8 @@ button {
     font-family: "Krona One", sans-serif;
     border-radius: 15px;
     box-shadow: inset 2px 2px 4px 0 #ffffff, inset -1px -1px 4px 0 #000000a4, 2px 2px 4px 0 #000000;
-}
 
-button:hover {
-    background-color: #d48e02;
-    cursor: pointer;
-}
+    &:hover {
+        background-color: #d48e02;
+        cursor: pointer;
+`

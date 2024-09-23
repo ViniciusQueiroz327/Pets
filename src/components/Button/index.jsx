@@ -1,8 +1,8 @@
-import './button.css'
+import { ButtonContainer } from './style'
 
-const Button = (props) => {
+const Button = ({title, onClick}) => {
     return (
-        <button {...props}></button>
+        <ButtonContainer onClick={onClick}>{title}</ButtonContainer>
     )
 }
 
