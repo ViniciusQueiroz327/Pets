@@ -1,4 +1,4 @@
-import './style.css'
+import './button.css'
 
 const Button = (props) => {
     return (

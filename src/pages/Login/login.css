@@ -1,0 +1,47 @@
+.login, .buttonLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    margin-top: 6rem;
+}
+
+.inputsLogin {
+    margin: 3.5vh 0;
+    width: 70vw;
+}
+
+input::placeholder {
+    color: #AEA6A6;
+}
+
+#user::before, #password::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .1rem;
+}
+
+#user::before {
+    background-image: url('../../assets/imgs/user.png');
+}
+
+#password::before {
+    background-image: url('../../assets/imgs/lock.png');
+}
+
+.buttonLogin {
+    margin-top: 12rem;
+}
+
+.buttonLogin p{
+    color: #BBBBBB;
+    margin-top: .5rem;
+    font-size: .5rem;
+}

@@ -1,16 +1,12 @@
-.login, .buttonLogin {
+.register, .buttonRegister {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.login {
-    margin-top: 6rem;
-}
-
-.inputs {
-    margin: 3.5vh 0;
+.inputsRegister {
+    margin: 1vh 0;
     width: 70vw;
 }
 
@@ -18,7 +14,7 @@ input::placeholder {
     color: #AEA6A6;
 }
 
-#user::before, #password::before {
+#user::before, .password::before, #email::before, #petsName::before, #petsSpecie::before {
     content: '';
     display: inline-block;
     width: 1rem;
@@ -32,15 +28,27 @@ input::placeholder {
     background-image: url('../../assets/imgs/user.png');
 }
 
-#password::before {
+#email::before {
+    background-image: url('../../assets/imgs/mail.svg');
+}
+
+#petsName::before {
+    background-image: url('../../assets/imgs/petsName.svg');
+}
+
+#petsSpecie::before {
+    background-image: url('../../assets/imgs/petsSpecie.svg');
+}
+
+.password::before {
     background-image: url('../../assets/imgs/lock.png');
 }
 
-.buttonLogin {
-    margin-top: 12rem;
+.buttonRegister {
+    margin-top: 11.5rem;
 }
 
-.buttonLogin p{
+.buttonRegister p{
     color: #BBBBBB;
     margin-top: .5rem;
     font-size: .5rem;
