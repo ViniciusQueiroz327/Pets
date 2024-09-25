@@ -69,7 +69,7 @@ const Register = () => {
                 errorMessage={errors?.user?.message} 
                 defaultValue='' 
                 control={control}
-                placeholder="@nickname" 
+                placeholder="@Nickname*" 
                 className="inputsLogin" 
                 icon={<MdPerson size={20} color="#F5A405"/>} 
             />
@@ -81,7 +81,7 @@ const Register = () => {
                     errorMessage={errors?.email?.message} 
                     defaultValue='' 
                     control={control}
-                    placeholder="e-mail" 
+                    placeholder="E-mail*" 
                     className="inputsRegister" 
                     icon={<MdLocalPostOffice size={20} 
                     color="#F5A405"/>} 
@@ -94,7 +94,7 @@ const Register = () => {
                     errorMessage={errors?.petsName?.message} 
                     defaultValue='' 
                     control={control}
-                    placeholder="Pet's name" 
+                    placeholder="Pet's name*" 
                     className="inputsRegister" 
                     icon={<FaTag size={20} color="#F5A405"/>} 
                 />
@@ -106,7 +106,7 @@ const Register = () => {
                     errorMessage={errors?.petsSpecie?.message} 
                     defaultValue='' 
                     control={control}
-                    placeholder="Pet's specie" 
+                    placeholder="Pet's specie*" 
                     className="inputsRegister" 
                     icon={<GiPawHeart size={20} color="#F5A405"/>} 
                 />
@@ -118,7 +118,7 @@ const Register = () => {
                     errorMessage={errors?.passwordEntry?.message} 
                     defaultValue='' 
                     control={control} 
-                    placeholder="Enter a password" 
+                    placeholder="Enter a password*" 
                     className="inputsRegister" 
                     icon={<MdLock size={20} color="#F5A405"/>} 
                 />
@@ -130,7 +130,7 @@ const Register = () => {
                     errorMessage={errors?.passwordConfirm?.message} 
                     defaultValue='' 
                     control={control} 
-                    placeholder="Confirm the password" 
+                    placeholder="Confirm the password*" 
                     className="inputsRegister" 
                     icon={<MdLock size={20} color="#F5A405"/>} 
                 />

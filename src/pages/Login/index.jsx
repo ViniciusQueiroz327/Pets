@@ -48,7 +48,7 @@ const Login = () => {
                 errorMessage={errors?.user?.message} 
                 defaultValue='' 
                 control={control}
-                placeholder="@nickname" 
+                placeholder="@Nickname*" 
                 className="inputsLogin" 
                 icon={<MdPerson size={20} color="#F5A405"/>} 
             />
@@ -60,7 +60,7 @@ const Login = () => {
                 errorMessage={errors?.password?.message} 
                 defaultValue='' 
                 control={control}
-                placeholder="password" 
+                placeholder="Password*" 
                 className="inputsLogin" 
                 icon={<MdLock size={20} color="#F5A405"/>} 
             />
