@@ -7,7 +7,7 @@ export const WrapperRegister = styled.div`
     justify-content: center;
 
     input {
-        margin: 1rem 0;
+        margin: .1rem 0;
     }
 `
 
@@ -16,7 +16,7 @@ export const WrapperButtonRegister= styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 9.5rem;
+    margin-top: 5rem;
 
     p {
         color: #BBBBBB;

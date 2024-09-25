@@ -8,8 +8,9 @@ export const WrapperLogin = styled.div`
     margin-top: 6rem;
 
     input {
-        margin: 2.5rem 0;
+        margin: .1rem 0;
     }
+
 `
 
 export const WrapperButtonLogin= styled.div`
@@ -17,7 +18,7 @@ export const WrapperButtonLogin= styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 12rem;
+    margin-top: 8rem;
 
     p {
         color: #BBBBBB;
