@@ -18,11 +18,11 @@ import { ImSpotify } from "react-icons/im"
 const Login = () => {
 
     const schema = yup.object().shape({
-        user: yup.string().required('Nickname is required'),
-        password: yup.string().required('Password is required')
+        user: yup.string().required('Nickname é obrigatório'),
+        password: yup.string().required('Password é obrigatória')
     });
 
-    const { control, handleSubmit } = useForm({
+    const { control, handleSubmit, formState: {errors} } = useForm({
         resolver: yupResolver(schema),
         mode: 'onSubmit'
     });
@@ -48,6 +48,7 @@ const Login = () => {
             <Input 
                 name="user" 
                 type="text"  
+                errorMessage={errors?.user?.message} 
                 defaultValue='' 
                 control={control}
                 placeholder="@Nickname*" 
@@ -58,7 +59,8 @@ const Login = () => {
         <div id="password">
             <Input 
                 name="password" 
-                type="password" 
+                type="password"
+                errorMessage={errors?.password?.message} 
                 defaultValue='' 
                 control={control}
                 placeholder="Password*" 
