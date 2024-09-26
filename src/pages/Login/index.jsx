@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
+
+import React from "react"
 
 import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
@@ -10,32 +12,33 @@ import { WrapperLogin, WrapperButtonLogin } from './style'
 
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-import * as yup from "yup"
-
-const schema = yup.object({
-    user: yup.string()
-    .min(10, 'No mínimo 10 caracteres')
-    .required('*Campo Obrigatório'),
-
-    password: yup.string()
-    .min(8, 'No mínimo 8 caracteres')
-    .matches(/[A-Z]/, 'Deve conter ao menos uma letra maiúscula')
-    .matches(/[a-z]/, 'Deve conter ao menos uma letra minúscula')
-    .matches(/\d/, 'Deve conter ao menos um número')
-    .matches(/[#@$!%*?&]/, 'Deve conter ao menos um caractere especial')
-    .required('*Campo Obrigatório')
-}).required()
+import * as yup from 'yup'
+import { ImSpotify } from "react-icons/im"
 
 const Login = () => {
 
-    const { control, handleSubmit, formState: {errors, isValid} } = useForm({
+    const schema = yup.object().shape({
+        user: yup.string().required('Nickname is required'),
+        password: yup.string().required('Password is required')
+    });
+
+    const { control, handleSubmit } = useForm({
         resolver: yupResolver(schema),
-        mode:'onSubmit'
-    })
+        mode: 'onSubmit'
+    });
 
-    //console.log(isValid, errors)
+    const [isLoggedIn, setIsLoggedIn] = React.useState(false);
 
-    const onSubmit = data => console.log("data")
+    const onSubmit = (data) => {
+        // Back-end call for validation
+        console.log(data);
+        // If succeded:
+        setIsLoggedIn(true);
+    };
+
+    if (isLoggedIn) {
+        return <Navigate to="/Feed" />;
+    }
 
     return (<>
     <Header/>
@@ -44,8 +47,7 @@ const Login = () => {
         <div id="user">
             <Input 
                 name="user" 
-                type="text" 
-                errorMessage={errors?.user?.message} 
+                type="text"  
                 defaultValue='' 
                 control={control}
                 placeholder="@Nickname*" 
@@ -57,7 +59,6 @@ const Login = () => {
             <Input 
                 name="password" 
                 type="password" 
-                errorMessage={errors?.password?.message} 
                 defaultValue='' 
                 control={control}
                 placeholder="Password*" 
