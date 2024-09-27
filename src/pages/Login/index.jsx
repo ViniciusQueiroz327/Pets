@@ -13,7 +13,6 @@ import { WrapperLogin, WrapperButtonLogin } from './style'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
-import { ImSpotify } from "react-icons/im"
 
 const Login = () => {
 

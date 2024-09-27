@@ -29,6 +29,6 @@ export const StoryImage = styled.img`
 export const StoryUsername = styled.span`
   display: block;
   margin-top: 3px;
-  font-size: 12px;
+  font-size: .7rem;
   color: #AEA6A6;
 `;

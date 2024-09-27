@@ -1,26 +1,17 @@
 import styled from 'styled-components';
 
-export const CreatePostWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #dbdbdb;
-  border-radius: 8px;
-  margin-bottom: 20px;
-`;
-
-export const Input = styled.input`
-  width: 80%;
-  padding: 10px;
-  border: 1px solid #dbdbdb;
-  border-radius: 8px;
-`;
-
 export const Button = styled.button`
   padding: 10px 20px;
-  background-color: #ffcc00;
+  background-color: #F5A405;
+  width: 40vw;
   border: none;
   border-radius: 8px;
+  box-shadow: inset 2px 2px 4px 0 #ffffff, inset -1px -1px 4px 0 #000000a4, 1px 1px 2px 0 #000000;
   cursor: pointer;
+  font-weight: 700;
+  font-family: "Krona One", sans-serif;
+
+    &:hover {
+      background-color: #d48e02;
+      cursor: pointer;
 `;

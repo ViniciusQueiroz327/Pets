@@ -9,5 +9,6 @@ export const GlobalStyle = createGlobalStyle `
 
     body {
         overflow-x: hidden;
+        font-family: "Krona One", sans-serif;
     }
 `
