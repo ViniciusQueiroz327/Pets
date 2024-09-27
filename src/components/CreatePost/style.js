@@ -6,7 +6,7 @@ export const Button = styled.button`
   width: 40vw;
   border: none;
   border-radius: 8px;
-  box-shadow: inset 2px 2px 4px 0 #ffffff, inset -1px -1px 4px 0 #000000a4, 1px 1px 2px 0 #000000;
+  box-shadow: inset 1px 1px 4px 0 #ffffff, inset -1px -1px 4px 0 #000000a4;
   cursor: pointer;
   font-weight: 700;
   font-family: "Krona One", sans-serif;

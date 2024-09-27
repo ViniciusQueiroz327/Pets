@@ -9,7 +9,7 @@ export const ButtonContainer = styled.button `
     font-size: 1.5rem;
     font-family: "Krona One", sans-serif;
     border-radius: 15px;
-    box-shadow: inset 2px 2px 4px 0 #ffffff, inset -1px -1px 4px 0 #000000a4, 2px 2px 4px 0 #000000;
+    box-shadow: inset 1px 1px 4px 0 #ffffff, inset -1px -1px 4px 0 #000000a4, 1px 1px 4px 0 #000000a4;
 
     &:hover {
         background-color: #d48e02;

@@ -26,6 +26,7 @@ export const PostImage = styled.img`
 export const PostActions = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 0;
 `;
@@ -47,14 +48,12 @@ export const CaptionWrapper = styled.div`
   margin-bottom: 5px;
 `;
 
-export const User = styled.p`
-  font-weight: 700;
-  font-size: .7rem;  
-`;
-
 export const Caption = styled.p`
   margin-left: 5px;
   font-size: .7rem;  
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
 `;
 
 export const Likes = styled.p`

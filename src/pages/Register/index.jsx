@@ -49,7 +49,7 @@ const schema = yup.object({
 
 const Register = () => {
 
-    const { control, handleSubmit, formState: {errors, isValid} } = useForm({
+    const { control, handleSubmit, formState: {errors, /*isValid*/} } = useForm({
         resolver: yupResolver(schema),
         mode:'onSubmit'
     })

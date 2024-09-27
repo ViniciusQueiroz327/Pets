@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { Stories } from '../../components/Stories';
-import { CreatePost } from '../../components/CreatePost'
+//import { CreatePost } from '../../components/CreatePost'
 import { Post } from '../../components/Post';
 
 import { FeedWrapper } from './style';
@@ -14,7 +14,7 @@ const Feed = () => {
     return (<>
         <FeedWrapper>
             <Stories />
-            <CreatePost />
+            {/*<CreatePost /> COMENTADO POR HORA -> IRÁ PARA OUTRA PÁGINA!*/}
             {posts.map((post) => (
                 <Post 
                     key={post.id}

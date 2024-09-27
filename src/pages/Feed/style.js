@@ -6,4 +6,5 @@ export const FeedWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow-x: hidden;
 `;
