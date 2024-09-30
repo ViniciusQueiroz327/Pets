@@ -9,6 +9,7 @@ import { Post } from '../../components/Post';
 import { FeedWrapper } from './style';
 
 import { posts } from '../../data/data';
+import { FixedMenu } from '../../components/FixedMenu';
 
 const Feed = () => {
     return (<>
@@ -28,6 +29,7 @@ const Feed = () => {
                 />
             ))}
         </FeedWrapper>
+        <FixedMenu></FixedMenu>
     </>)
 }
 
