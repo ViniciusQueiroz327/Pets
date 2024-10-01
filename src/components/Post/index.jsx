@@ -8,7 +8,7 @@ const Post = ({ user, name, imageUrl, likes, comments, shares, caption }) => {
       <h3>{name}</h3>
       <ActionButton>⋮</ActionButton>
      </PostHeader>
-     <PostImage src={imageUrl} alt='post'/>
+     <PostImage src={imageUrl} alt={caption}/>
      <CaptionWrapper>  
          <Caption>
           <span style={{ fontWeight: 'bold' }}>{user}:</span> {caption}

@@ -10,6 +10,10 @@ export const MenuWrapper = styled.footer `
     align-items: center;
     justify-content: space-around;
     background-color: #f9f9f9;
+
+    transition: transform 0.3s ease;
+    transform: ${({ $isVisible }) => ($isVisible ? 'translateY(0)' : 'translateY(100%)')};
+
 `
 
 export const ActionButton = styled.button `
