@@ -9,7 +9,7 @@ export const MenuWrapper = styled.footer `
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: #F5A405;
+    background-color: #f9f9f9;
 `
 
 export const ActionButton = styled.button `
@@ -17,10 +17,10 @@ export const ActionButton = styled.button `
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #F5A405;
+    background-color: #f9f9f9;
 
     &:hover {
-        background-color: #d48e02;
+        background-color: #f1f1f1;
         cursor: pointer;
     }
 
