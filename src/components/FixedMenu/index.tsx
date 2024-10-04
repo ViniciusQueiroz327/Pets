@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
 
 import { ActionButton, MenuWrapper } from './style'
+import { IFixedMenu } from './types'
 
 import { FaHome, FaSearch, FaUser } from 'react-icons/fa'
 
-const FixedMenu = ({isVisible}) => {
+const FixedMenu = ({isVisible}: IFixedMenu) => {
 
   return (
     <MenuWrapper $isVisible={isVisible}>
@@ -16,4 +17,3 @@ const FixedMenu = ({isVisible}) => {
 }
 
 export { FixedMenu }
-

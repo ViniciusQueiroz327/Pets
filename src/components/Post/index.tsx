@@ -1,7 +1,7 @@
-import React from 'react'
+import { IPost } from './types'
 import { ActionButton, Likes, PostActions, PostHeader, PostImage, PostWrapper, CaptionWrapper, Comments, Shares, Caption } from './style'
 
-const Post = ({ user, name, imageUrl, likes, comments, shares, caption }) => {
+const Post = ({ user, name, imageUrl, likes, comments, shares, caption }: IPost) => {
   return (
    <PostWrapper>
      <PostHeader>

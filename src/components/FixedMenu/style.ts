@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { IFixedMenuStyled } from './types'
 
-export const MenuWrapper = styled.footer `
+export const MenuWrapper = styled.footer<IFixedMenuStyled>`
     position: fixed;
     bottom: 0;
     width: 100%;

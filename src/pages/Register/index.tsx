@@ -7,6 +7,7 @@ import { Button } from '../../components/Button'
 import { MdPerson, MdLock, MdLocalPostOffice } from "react-icons/md";
 
 import { WrapperRegister, WrapperButtonRegister } from './style'
+import { RegisterFormInputs } from './types'
 
 import { FaTag } from "react-icons/fa6"
 import { GiPawHeart } from "react-icons/gi"
@@ -56,7 +57,7 @@ const Register = () => {
 
     //console.log(isValid, errors)
 
-    const onSubmit = data => console.log("data")
+    const onSubmit = (data: RegisterFormInputs) => console.log("data")
 
     return (<>
     <Header />

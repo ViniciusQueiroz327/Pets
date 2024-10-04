@@ -9,6 +9,7 @@ import { Button } from '../../components/Button'
 import { MdPerson, MdLock } from "react-icons/md";
 
 import { WrapperLogin, WrapperButtonLogin } from './style'
+import { LoginFormInputs } from './types'
 
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -21,14 +22,14 @@ const Login = () => {
         password: yup.string().required('Password é obrigatória')
     });
 
-    const { control, handleSubmit, formState: {errors} } = useForm({
+    const { control, handleSubmit, formState: {errors} } = useForm<LoginFormInputs>({
         resolver: yupResolver(schema),
         mode: 'onSubmit'
     });
 
     const [isLoggedIn, setIsLoggedIn] = React.useState(false);
 
-    const onSubmit = (data) => {
+    const onSubmit = (data: LoginFormInputs) => {
         // Back-end call for validation
         console.log(data);
         // If succeded:
